@@ -2,9 +2,10 @@
 
 TODO:
 
+This template was created by David Gutierrez (https://github.com/david68cu).
 
 
-## We we should use a template we know for our projects
+## We should use a template we know for our projects
 TODO:
 
 
