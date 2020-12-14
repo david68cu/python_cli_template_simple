@@ -3,6 +3,8 @@
 TODO:
 
 This template was created by David Gutierrez (https://github.com/david68cu).
+This was based on why do we need a good scalfoding of our app in [1]
+In brief this template can be used for simple python scripts without inter module dependencies
 
 
 ## We should use a template we know for our projects
@@ -21,15 +23,20 @@ importing is not a big deal. the repo is in [0]
 
 ## Running the CLI application
   
-  - Install a pipenv
+  - Install a pipenv or venev and activate
+     python3 -m venv path/to/even
+     source venv/bin/activate
+     pip black
+     pip freeze > requirements.txt
   - Make your file structure similar to the following tree:
 
   - Running the application
       - python sample/core.py (from outside sample dir)
       - python core.py (from sample dir)
+      
   -Testing the application
       - python -m unittest tests/test_basic.py
-      - python -m unittest tests/test_advanced.py
+      - python -m unittest tests/test_advanced.py (this will fail because of)
       
   - To understand more about the file composition , please read the GitHUb repo 
  
@@ -47,8 +54,8 @@ importing is not a big deal. the repo is in [0]
 
 ## What is that README.rst and why it is added to this repo
 
-Python project could need a web documentation. Usually we use Sphinx . We are just  noticing where the Sphins 
-Readme.rst file should go in the Python file structure
+Python project could need a web documentation. Usually we use Sphinx . 
+We are just  noticing where the Sphins Readme.rst file should go in the Python file structure
 
 
 ## Continuos Integration
