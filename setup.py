@@ -1,6 +1,6 @@
  # -*- coding: utf-8 -*-
 
-# Learn more: https://github.com/kennethreitz/setup.py
+# Learn more: https://packaging.python.org/tutorials/packaging-projects/
 
 from setuptools import setup, find_packages
 
@@ -23,5 +23,6 @@ setup(
     entry_points = {
          'console_scripts': [
              'sample = core.__main__:main'
-         ]}
+         ]},
+    python_requires='>=3.8',
 )
